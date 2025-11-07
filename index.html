@@ -389,13 +389,20 @@
 
   <script>
     // 샘플 제품 데이터 (시뮬레이션)
-    const PRODUCTS = [
-      { id:1, name:"에코 립밤 (식물성)", tone:["warm","neutral"], type:["normal","dry","sensitive"], climates:["temperate","cold"], score:92, desc:"천연 왁스와 오일, 리필 용기 제공" },
-      { id:2, name:"리필 파운데이션 (멀티유즈)", tone:["neutral","cool"], type:["normal","oily"], climates:["temperate","humid","dry"], score:88, desc:"다용도 텍스처로 립+치크 사용 가능" },
-      { id:3, name:"비건 아이섀도우 팔레트", tone:["cool","neutral","warm"], type:["normal","sensitive"], climates:["temperate"], score:80, desc:"식물성 안료 사용" },
-      { id:4, name:"오일 기반 클렌져 (생분해)", tone:["neutral"], type:["dry","sensitive"], climates:["dry","cold"], score:95, desc:"미세플라스틱 무첨가, 적은 물로도 세정력 우수" },
-      { id:5, name:"제로웨이스트 브러쉬", tone:[], type:[], climates:[], score:70, desc:"대나무 손잡이와 재활용 가능한 포장" }
-    ];
+const PRODUCTS = [
+  { id:1, name:"에코 립밤 (식물성)", tone:["warm","neutral"], type:["normal","dry","sensitive"], climates:["temperate","cold"], score:92, desc:"천연 왁스와 오일, 리필 용기 제공" },
+  { id:2, name:"리필 파운데이션 (멀티유즈)", tone:["neutral","cool"], type:["normal","oily"], climates:["temperate","humid","dry"], score:88, desc:"다용도 텍스처로 립+치크 사용 가능" },
+  { id:3, name:"비건 아이섀도우 팔레트", tone:["cool","neutral","warm"], type:["normal","sensitive"], climates:["temperate"], score:80, desc:"식물성 안료 사용" },
+  { id:4, name:"오일 기반 클렌져 (생분해)", tone:["neutral"], type:["dry","sensitive"], climates:["dry","cold"], score:95, desc:"미세플라스틱 무첨가, 적은 물로도 세정력 우수" },
+  { id:5, name:"제로웨이스트 브러쉬", tone:[], type:[], climates:[], score:70, desc:"대나무 손잡이와 재활용 가능한 포장" },
+  { id:6, name:"자연 유래 쿠션 파운데이션", tone:["warm","neutral"], type:["dry","normal"], climates:["temperate","humid"], score:90, desc:"알로에·카렌듈라 추출물 함유, 리필형 패키지" },
+  { id:7, name:"플라워 블러셔 (코랄 핑크)", tone:["warm","neutral"], type:["normal","oily"], climates:["temperate","humid"], score:85, desc:"식물성 안료와 옥수수 전분 베이스, 무자극 포뮬라" },
+  { id:8, name:"허벌 세럼 프라이머", tone:["neutral"], type:["dry","sensitive"], climates:["dry","cold"], score:93, desc:"라벤더·캐모마일 성분으로 피부 진정 및 보습" },
+  { id:9, name:"천연 마스카라 (리필 가능)", tone:["cool","neutral"], type:["sensitive","normal"], climates:["temperate","humid"], score:87, desc:"대두 단백질로 속눈썹 강화, 용기 재사용 가능" },
+  { id:10, name:"비건 하이라이터 스틱", tone:["warm","cool","neutral"], type:["normal"], climates:["temperate"], score:83, desc:"코코넛 오일 기반, 다회용 스틱형으로 플라스틱 절감" },
+  { id:11, name:"알로에 수분 미스트", tone:[], type:["dry","sensitive"], climates:["dry","hot","humid"], score:91, desc:"무알콜·무색소, 생분해 가능한 분사 펌프" },
+  { id:12, name:"라이스 클렌징 파우더", tone:[], type:["oily","sensitive"], climates:["humid","temperate"], score:89, desc:"쌀겨 가루를 이용한 저자극 세정, 용기 없이 리필형 포장" }
+];
 
     // DOM
     const recommendBtn = document.getElementById('recommendBtn');
